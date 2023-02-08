@@ -2,14 +2,14 @@ import threading
 
 import winsound
 import tkinter as tk
-import os
-from tkinter import filedialog
 
 from Main_App.DataSource.directory_reader import DirectoryReader
 from Main_App.DataSource.file_reader import FileReader
-from Main_App.Utils.data_processing import filter_lines_by, read_file
+from Main_App.Utils.data_processing import filter_lines_by
 from Main_App.Utils.data_searchers import count_for_list_items_in_list
 
+
+# replace tkinter with PyQt
 
 class KeywordTracker(tk.Tk):
     def __init__(self, *args, **kwargs):
